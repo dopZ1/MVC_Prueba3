@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using MVC_Prueba3.Models;
 
 namespace MVC_Prueba3.Data
 {
@@ -12,5 +13,7 @@ namespace MVC_Prueba3.Data
             : base(options)
         {
         }
+        public DbSet<MVC_Prueba3.Models.Producto> Producto { get; set; }
+        public DbSet<MVC_Prueba3.Models.Local> Local { get; set; }
     }
 }
